@@ -1,0 +1,41 @@
+:root { font-family: 'Inter', 'Segoe UI', sans-serif; color: #e2e8f0; background: #0b1120; font-synthesis: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
+html, body, #app { min-height: 100%; margin: 0; background: #0b1120; }
+body { min-width: 320px; }
+.v-application { font-family: 'Inter', 'Segoe UI', sans-serif; background: #0b1120 !important; }
+.sidebar { background: #0f172a !important; border-right: 1px solid rgba(148, 163, 184, .13) !important; }
+.brand { display: flex; align-items: center; gap: 11px; }
+.brand-mark { display: grid; place-items: center; width: 32px; height: 32px; color: #07111d; background: #2dd4bf; border-radius: 8px; transform: rotate(-8deg); }
+.brand-name { color: #f8fafc; font-size: 15px; font-weight: 700; letter-spacing: .2px; }
+.brand-subtitle { color: #64748b; font-size: 9px; font-weight: 700; letter-spacing: 2.2px; margin-top: 2px; }
+.nav-label { color: #64748b !important; font-size: 10px !important; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; }
+.sidebar .v-list-item { color: #94a3b8; min-height: 44px; margin: 3px 0; }
+.sidebar .v-list-item--active { color: #5eead4 !important; background: rgba(45, 212, 191, .11) !important; }
+.sidebar .v-list-item--active::before { opacity: 0 !important; }
+.sidebar-footer { position: absolute; right: 0; bottom: 28px; left: 0; }
+.support-card { border: 1px solid rgba(148, 163, 184, .13); border-radius: 9px; background: rgba(30, 41, 59, .5); }
+.topbar { background: rgba(11, 17, 32, .94) !important; border-bottom: 1px solid rgba(148, 163, 184, .13) !important; }
+.month-select { max-width: 166px; }
+.month-select .v-field { background: #111827; border-color: rgba(148, 163, 184, .22); }
+.main-area { background: #0b1120; }
+.dashboard-page { max-width: 1440px; padding-top: 35px; padding-bottom: 30px; }
+.eyebrow, .section-kicker { color: #5eead4; font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; }
+.live-dot { display: inline-block; width: 6px; height: 6px; margin: 0 5px 1px 7px; border-radius: 50%; background: #2dd4bf; box-shadow: 0 0 0 3px rgba(45, 212, 191, .12); }
+.page-title { color: #f8fafc; font-size: clamp(25px, 3vw, 34px); font-weight: 700; letter-spacing: -.8px; line-height: 1.15; }
+.page-subtitle { color: #94a3b8; font-size: 14px; }
+.page-subtitle strong { color: #cbd5e1; font-weight: 600; }
+.export-btn { color: #042f2e !important; font-weight: 700; text-transform: none; letter-spacing: 0; }
+.metric-card, .chart-card { background: #111827 !important; border: 1px solid rgba(148, 163, 184, .13); }
+.metric-card { min-height: 138px; }
+.metric-label, .chart-legend-note { color: #94a3b8; font-size: 12px; }
+.metric-value { color: #f8fafc; font-size: 25px; font-weight: 700; letter-spacing: -.4px; }
+.metric-detail { color: #64748b; font-size: 11px; }
+.card-heading { display: flex; align-items: flex-start; justify-content: space-between; }
+.card-heading h2 { color: #f8fafc; font-size: 17px; font-weight: 600; margin: 5px 0 0; }
+.card-heading .v-icon { color: #64748b; }
+.chart-legend-note { margin-top: 7px; }
+.chart-wrap { position: relative; height: 292px; margin-top: 24px; }
+.service-chart { height: 300px; }
+.footer-note { display: flex; justify-content: space-between; color: #64748b; font-size: 11px; }
+.status-badge { color: #94a3b8; }
+@media (max-width: 959px) { .sidebar { display: none; } .footer-note { gap: 12px; flex-wrap: wrap; } }
+@media (max-width: 600px) { .dashboard-page { padding-top: 25px; } .chart-wrap { height: 250px; } .service-chart { height: 270px; } .month-select { max-width: 150px; } }

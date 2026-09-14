@@ -1,0 +1,319 @@
+{
+  "company": "FastForward Logistics",
+  "year": 2025,
+  "currency": "USD",
+  "months": [
+    {
+      "month": "January",
+      "month_number": 1,
+      "revenue": 1184200,
+      "on_time_percentage": 93.8,
+      "minutes_of_delay": {
+        "total": 18420,
+        "by_day": [520, 610, 480, 710, 560, 630, 450, 590, 670, 740, 510, 460, 620, 580, 690, 720, 550, 490, 640, 760, 610, 530, 680, 590, 470, 620, 710, 540, 660, 580, 630]
+      },
+      "customer_service_calls": {
+        "received": 428,
+        "positive_sentiment": 251,
+        "negative_sentiment": 177,
+        "resolved_satisfactorily": 362,
+        "not_resolved_satisfactorily": 66
+      },
+      "fuel": {
+        "cost": 146800,
+        "gallons": 48200
+      },
+      "delivery_hours": {
+        "hours": 18460,
+        "minutes": 1107600,
+        "delta_expected_hours": 218
+      }
+    },
+    {
+      "month": "February",
+      "month_number": 2,
+      "revenue": 1247800,
+      "on_time_percentage": 94.6,
+      "minutes_of_delay": {
+        "total": 17180,
+        "by_day": [480, 550, 620, 430, 590, 510, 470, 640, 580, 520, 450, 610, 570, 490, 660, 540, 500, 620, 710, 560, 480, 590, 530, 680, 510, 470, 630, 550]
+      },
+      "customer_service_calls": {
+        "received": 402,
+        "positive_sentiment": 244,
+        "negative_sentiment": 158,
+        "resolved_satisfactorily": 348,
+        "not_resolved_satisfactorily": 54
+      },
+      "fuel": {
+        "cost": 153900,
+        "gallons": 50100
+      },
+      "delivery_hours": {
+        "hours": 19320,
+        "minutes": 1159200,
+        "delta_expected_hours": 164
+      }
+    },
+    {
+      "month": "March",
+      "month_number": 3,
+      "revenue": 1369200,
+      "on_time_percentage": 94.1,
+      "minutes_of_delay": {
+        "total": 19640,
+        "by_day": [610, 720, 550, 680, 760, 590, 630, 740, 690, 570, 650, 810, 600, 710, 680, 620, 750, 690, 580, 640, 770, 610, 700, 660, 590, 730, 680, 620, 760, 640, 700]
+      },
+      "customer_service_calls": {
+        "received": 447,
+        "positive_sentiment": 253,
+        "negative_sentiment": 194,
+        "resolved_satisfactorily": 371,
+        "not_resolved_satisfactorily": 76
+      },
+      "fuel": {
+        "cost": 168700,
+        "gallons": 54800
+      },
+      "delivery_hours": {
+        "hours": 21180,
+        "minutes": 1270800,
+        "delta_expected_hours": 286
+      }
+    },
+    {
+      "month": "April",
+      "month_number": 4,
+      "revenue": 1498600,
+      "on_time_percentage": 92.9,
+      "minutes_of_delay": {
+        "total": 22680,
+        "by_day": [720, 810, 690, 750, 880, 710, 640, 920, 780, 730, 840, 690, 760, 950, 810, 720, 860, 790, 680, 900, 830, 750, 890, 710, 800, 930, 760, 840, 780, 910]
+      },
+      "customer_service_calls": {
+        "received": 512,
+        "positive_sentiment": 276,
+        "negative_sentiment": 236,
+        "resolved_satisfactorily": 406,
+        "not_resolved_satisfactorily": 106
+      },
+      "fuel": {
+        "cost": 184600,
+        "gallons": 59900
+      },
+      "delivery_hours": {
+        "hours": 23440,
+        "minutes": 1406400,
+        "delta_expected_hours": 438
+      }
+    },
+    {
+      "month": "May",
+      "month_number": 5,
+      "revenue": 1574300,
+      "on_time_percentage": 93.5,
+      "minutes_of_delay": {
+        "total": 21890,
+        "by_day": [680, 730, 790, 620, 850, 700, 660, 810, 740, 690, 780, 720, 650, 860, 730, 700, 820, 760, 680, 800, 710, 750, 840, 690, 730, 810, 670, 790, 740, 830, 700]
+      },
+      "customer_service_calls": {
+        "received": 486,
+        "positive_sentiment": 291,
+        "negative_sentiment": 195,
+        "resolved_satisfactorily": 412,
+        "not_resolved_satisfactorily": 74
+      },
+      "fuel": {
+        "cost": 193200,
+        "gallons": 62700
+      },
+      "delivery_hours": {
+        "hours": 24620,
+        "minutes": 1477200,
+        "delta_expected_hours": 312
+      }
+    },
+    {
+      "month": "June",
+      "month_number": 6,
+      "revenue": 1443800,
+      "on_time_percentage": 95.2,
+      "minutes_of_delay": {
+        "total": 18360,
+        "by_day": [570, 620, 540, 680, 590, 610, 500, 640, 580, 530, 690, 560, 600, 710, 550, 620, 510, 670, 590, 540, 630, 580, 520, 650, 570, 610, 530, 690, 560, 600]
+      },
+      "customer_service_calls": {
+        "received": 438,
+        "positive_sentiment": 277,
+        "negative_sentiment": 161,
+        "resolved_satisfactorily": 383,
+        "not_resolved_satisfactorily": 55
+      },
+      "fuel": {
+        "cost": 177500,
+        "gallons": 57600
+      },
+      "delivery_hours": {
+        "hours": 22480,
+        "minutes": 1348800,
+        "delta_expected_hours": 126
+      }
+    },
+    {
+      "month": "July",
+      "month_number": 7,
+      "revenue": 1397200,
+      "on_time_percentage": 94.8,
+      "minutes_of_delay": {
+        "total": 19130,
+        "by_day": [620, 570, 690, 540, 730, 610, 580, 760, 630, 590, 710, 650, 560, 740, 620, 680, 550, 720, 640, 580, 700, 610, 670, 560, 750, 630, 590, 710, 650, 600, 680]
+      },
+      "customer_service_calls": {
+        "received": 451,
+        "positive_sentiment": 269,
+        "negative_sentiment": 182,
+        "resolved_satisfactorily": 379,
+        "not_resolved_satisfactorily": 72
+      },
+      "fuel": {
+        "cost": 171900,
+        "gallons": 55800
+      },
+      "delivery_hours": {
+        "hours": 21890,
+        "minutes": 1313400,
+        "delta_expected_hours": 174
+      }
+    },
+    {
+      "month": "August",
+      "month_number": 8,
+      "revenue": 1516800,
+      "on_time_percentage": 93.7,
+      "minutes_of_delay": {
+        "total": 21740,
+        "by_day": [710, 780, 650, 820, 740, 690, 760, 880, 720, 670, 850, 730, 790, 680, 900, 750, 710, 830, 770, 690, 860, 740, 800, 720, 890, 760, 680, 840, 730, 790, 700]
+      },
+      "customer_service_calls": {
+        "received": 493,
+        "positive_sentiment": 282,
+        "negative_sentiment": 211,
+        "resolved_satisfactorily": 395,
+        "not_resolved_satisfactorily": 98
+      },
+      "fuel": {
+        "cost": 186800,
+        "gallons": 60600
+      },
+      "delivery_hours": {
+        "hours": 23960,
+        "minutes": 1437600,
+        "delta_expected_hours": 356
+      }
+    },
+    {
+      "month": "September",
+      "month_number": 9,
+      "revenue": 1689400,
+      "on_time_percentage": 92.6,
+      "minutes_of_delay": {
+        "total": 26780,
+        "by_day": [820, 910, 780, 960, 880, 840, 930, 1020, 870, 790, 980, 860, 920, 810, 1050, 890, 830, 970, 900, 850, 1010, 880, 940, 820, 1070, 910, 860, 990, 880, 950]
+      },
+      "customer_service_calls": {
+        "received": 578,
+        "positive_sentiment": 302,
+        "negative_sentiment": 276,
+        "resolved_satisfactorily": 438,
+        "not_resolved_satisfactorily": 140
+      },
+      "fuel": {
+        "cost": 211400,
+        "gallons": 68700
+      },
+      "delivery_hours": {
+        "hours": 27620,
+        "minutes": 1657200,
+        "delta_expected_hours": 592
+      }
+    },
+    {
+      "month": "October",
+      "month_number": 10,
+      "revenue": 1847600,
+      "on_time_percentage": 91.8,
+      "minutes_of_delay": {
+        "total": 30420,
+        "by_day": [940, 1010, 890, 1080, 970, 920, 1040, 1150, 980, 900, 1100, 960, 1030, 910, 1180, 990, 940, 1090, 1020, 930, 1160, 1000, 1070, 950, 1210, 1030, 970, 1120, 990, 1080, 940]
+      },
+      "customer_service_calls": {
+        "received": 641,
+        "positive_sentiment": 319,
+        "negative_sentiment": 322,
+        "resolved_satisfactorily": 463,
+        "not_resolved_satisfactorily": 178
+      },
+      "fuel": {
+        "cost": 229800,
+        "gallons": 74600
+      },
+      "delivery_hours": {
+        "hours": 30280,
+        "minutes": 1816800,
+        "delta_expected_hours": 748
+      }
+    },
+    {
+      "month": "November",
+      "month_number": 11,
+      "revenue": 1918300,
+      "on_time_percentage": 92.4,
+      "minutes_of_delay": {
+        "total": 28760,
+        "by_day": [880, 960, 850, 1020, 920, 890, 980, 1080, 930, 870, 1040, 910, 970, 860, 1110, 940, 900, 1060, 990, 880, 1090, 950, 1010, 890, 1140, 980, 920, 1070, 940, 1020]
+      },
+      "customer_service_calls": {
+        "received": 624,
+        "positive_sentiment": 338,
+        "negative_sentiment": 286,
+        "resolved_satisfactorily": 472,
+        "not_resolved_satisfactorily": 152
+      },
+      "fuel": {
+        "cost": 238600,
+        "gallons": 77500
+      },
+      "delivery_hours": {
+        "hours": 31640,
+        "minutes": 1898400,
+        "delta_expected_hours": 624
+      }
+    },
+    {
+      "month": "December",
+      "month_number": 12,
+      "revenue": 1764200,
+      "on_time_percentage": 94.3,
+      "minutes_of_delay": {
+        "total": 23160,
+        "by_day": [730, 810, 690, 760, 850, 720, 680, 890, 740, 700, 820, 770, 650, 860, 780, 710, 830, 690, 750, 880, 720, 680, 810, 740, 700, 850, 770, 690, 820, 750, 730]
+      },
+      "customer_service_calls": {
+        "received": 566,
+        "positive_sentiment": 321,
+        "negative_sentiment": 245,
+        "resolved_satisfactorily": 438,
+        "not_resolved_satisfactorily": 128
+      },
+      "fuel": {
+        "cost": 218900,
+        "gallons": 71100
+      },
+      "delivery_hours": {
+        "hours": 28760,
+        "minutes": 1725600,
+        "delta_expected_hours": 382
+      }
+    }
+  ]
+}
