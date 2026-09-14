@@ -7,6 +7,7 @@ body { min-width: 320px; }
 .brand-mark { display: grid; place-items: center; width: 32px; height: 32px; color: #07111d; background: #2dd4bf; border-radius: 8px; transform: rotate(-8deg); }
 .brand-name { color: #f8fafc; font-size: 15px; font-weight: 700; letter-spacing: .2px; }
 .brand-subtitle { color: #64748b; font-size: 9px; font-weight: 700; letter-spacing: 2.2px; margin-top: 2px; }
+.drawer-close { margin-left: auto; color: #94a3b8 !important; }
 .nav-label { color: #64748b !important; font-size: 10px !important; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; }
 .sidebar .v-list-item { color: #94a3b8; min-height: 44px; margin: 3px 0; }
 .sidebar .v-list-item--active { color: #5eead4 !important; background: rgba(45, 212, 191, .11) !important; }
@@ -37,5 +38,5 @@ body { min-width: 320px; }
 .service-chart { height: 300px; }
 .footer-note { display: flex; justify-content: space-between; color: #64748b; font-size: 11px; }
 .status-badge { color: #94a3b8; }
-@media (max-width: 959px) { .sidebar { display: none; } .footer-note { gap: 12px; flex-wrap: wrap; } }
+@media (max-width: 959px) { .footer-note { gap: 12px; flex-wrap: wrap; } }
 @media (max-width: 600px) { .dashboard-page { padding-top: 25px; } .chart-wrap { height: 250px; } .service-chart { height: 270px; } .month-select { max-width: 150px; } }

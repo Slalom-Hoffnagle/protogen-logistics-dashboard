@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { Bar, Line } from 'vue-chartjs'
+import { useDisplay } from 'vuetify'
 import { BarElement, CategoryScale, Chart as ChartJS, Filler, Legend, LineElement, LinearScale, PointElement, Tooltip } from 'chart.js'
 import type { ChartOptions } from 'chart.js'
 import metrics from './data/metrics.json'
@@ -9,6 +10,8 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, PointElement, LineEleme
 
 type MonthMetric = (typeof metrics.months)[number]
 const selectedMonth = ref(0)
+const mobileDrawerOpen = ref(false)
+const { mdAndDown } = useDisplay()
 const months = metrics.months as MonthMetric[]
 const monthOptions = [{ title: 'All months', value: 0 }, ...months.map((month) => ({ title: month.month, value: month.month_number }))]
 const filteredMonths = computed(() => selectedMonth.value === 0 ? months : months.filter((month) => month.month_number === selectedMonth.value))
@@ -57,8 +60,8 @@ const serviceChartOptions: ChartOptions<'bar'> = { ...baseOptions, scales: { ...
 
 <template>
   <v-app>
-  <v-navigation-drawer permanent width="248" class="sidebar">
-    <div class="brand px-6 py-7"><div class="brand-mark"><v-icon icon="mdi-arrow-collapse-right" size="19" /></div><div><div class="brand-name">FastForward</div><div class="brand-subtitle">LOGISTICS</div></div></div>
+  <v-navigation-drawer v-model="mobileDrawerOpen" :permanent="!mdAndDown" :temporary="mdAndDown" width="248" class="sidebar">
+    <div class="brand px-6 py-7"><div class="brand-mark"><v-icon icon="mdi-arrow-collapse-right" size="19" /></div><div><div class="brand-name">FastForward</div><div class="brand-subtitle">LOGISTICS</div></div><v-btn v-if="mdAndDown" icon="mdi-menu-open" variant="text" size="small" class="drawer-close" aria-label="Close navigation menu" @click="mobileDrawerOpen = false" /></div>
     <v-list nav class="px-3 mt-3">
       <v-list-subheader class="nav-label">FastForward Logisitics</v-list-subheader>
       <v-list-item active rounded="lg" prepend-icon="mdi-view-dashboard-outline" title="Overview" />
@@ -71,7 +74,7 @@ const serviceChartOptions: ChartOptions<'bar'> = { ...baseOptions, scales: { ...
     </v-list>
     <div class="sidebar-footer px-5"><div class="support-card pa-4"><v-icon icon="mdi-lifebuoy" color="teal-lighten-2" class="mb-2" /><div class="text-body-2 font-weight-medium">Need a hand?</div><div class="text-caption text-medium-emphasis mt-1">Contact operations support</div><v-btn size="small" variant="text" color="teal-lighten-2" class="px-0 mt-2">Get support <v-icon end size="14">mdi-arrow-right</v-icon></v-btn></div><div class="user-row mt-5 d-flex align-center"><v-avatar color="deep-purple-lighten-2" size="34">JW</v-avatar><div class="ml-3"><div class="text-body-2">Jordan Wells</div><div class="text-caption text-medium-emphasis">Operations lead</div></div></div></div>
   </v-navigation-drawer>
-  <v-app-bar flat class="topbar px-4 px-md-8"><div class="d-flex align-center"><span class="text-caption text-medium-emphasis mr-2">FastForward Logistics</span><span class="text-caption">/</span><span class="text-caption font-weight-medium ml-2">Overview</span></div><v-spacer /><v-btn icon="mdi-bell-outline" variant="text" size="small" class="mr-2" aria-label="Notifications" /><v-divider vertical class="mr-4" /><v-select v-model="selectedMonth" :items="monthOptions" item-title="title" item-value="value" density="compact" variant="outlined" hide-details class="month-select" prepend-inner-icon="mdi-calendar-month-outline" aria-label="Filter by month" /></v-app-bar>
+  <v-app-bar flat class="topbar px-4 px-md-8"><v-btn v-if="mdAndDown" icon="mdi-menu" variant="text" class="mr-2" aria-label="Open navigation menu" @click="mobileDrawerOpen = true" /><div class="d-flex align-center"><span class="text-caption text-medium-emphasis mr-2">FastForward Logistics</span><span class="text-caption">/</span><span class="text-caption font-weight-medium ml-2">Overview</span></div><v-spacer /><v-btn icon="mdi-bell-outline" variant="text" size="small" class="mr-2" aria-label="Notifications" /><v-divider vertical class="mr-4" /><v-select v-model="selectedMonth" :items="monthOptions" item-title="title" item-value="value" density="compact" variant="outlined" hide-details class="month-select" prepend-inner-icon="mdi-calendar-month-outline" aria-label="Filter by month" /></v-app-bar>
   <v-main class="main-area"><v-container fluid class="dashboard-page px-5 px-md-8">
     <div class="d-flex flex-wrap align-end justify-space-between mb-8 gap-4"><div><div class="eyebrow">Performance snapshot <span class="live-dot" /> Live data</div><h1 class="page-title mt-2">Good morning, Jordan</h1><p class="page-subtitle mt-2">Here is what is happening across your network for <strong>{{ currentScope }}</strong>.</p></div><v-btn color="teal-accent-3" variant="flat" prepend-icon="mdi-download-outline" class="export-btn">Export report</v-btn></div>
     <v-row class="mb-2"><v-col v-for="card in summaryCards" :key="card.label" cols="12" sm="6" xl="3"><v-card class="metric-card pa-5" rounded="lg" elevation="0"><div class="d-flex justify-space-between align-start"><div class="metric-label">{{ card.label }}</div><v-icon :icon="card.icon" :color="`${card.color}-lighten-2`" size="21" /></div><div class="metric-value mt-4">{{ card.value }}</div><div v-if="card.detail" class="metric-detail mt-2">{{ card.detail }}</div></v-card></v-col></v-row>
